@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Encryption Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Message Encryption Tool</h2>
+
+<textarea id="message" placeholder="Enter message"></textarea>
+
+<input type="number" id="shift" placeholder="Shift value (1-25)">
+
+<div class="buttons">
+<button onclick="encrypt()">Encrypt</button>
+<button onclick="decrypt()">Decrypt</button>
+</div>
+
+<h3>Encrypted Message</h3>
+<p id="encrypted"></p>
+
+<h3>Decrypted Message</h3>
+<p id="decrypted"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
