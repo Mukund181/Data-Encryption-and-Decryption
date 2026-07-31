@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Encryption Tool</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Encryption & Decryption Tool (C++ WebAssembly Engine)</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -10,10 +12,12 @@
 <div class="container">
 
 <h2>Message Encryption Tool</h2>
+<p class="subtitle">Vigenère Polyalphabetic Cipher powered by C++ Engine</p>
+<div id="engine-badge" class="badge">Engine: C++ Logic Engine (cipher.cpp)</div>
 
-<textarea id="message" placeholder="Enter message"></textarea>
+<textarea id="message" placeholder="Enter message to encrypt"></textarea>
 
-<input type="number" id="shift" placeholder="Shift value (1-25)">
+<input type="text" id="key" placeholder="Enter secret key (e.g. KEY)">
 
 <div class="buttons">
 <button onclick="encrypt()">Encrypt</button>
